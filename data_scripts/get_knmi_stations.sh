@@ -4,10 +4,9 @@ stations=(210 215 225 235 240 242 249 251 257 260 265 267 269 270 273 275 277 27
 
 # Download files
 for i in ${stations[@]}; do
-    wget http://www.knmi.nl/klimatologie/uurgegevens/datafiles/${i}/uurgeg_${i}_2011-2020.zip
+    wget http://cdn.knmi.nl/knmi/map/page/klimatologie/gegevens/uurgegevens/uurgeg_${i}_2011-2020.zip
 done
 
-# Unzip
 for i in ${stations[@]}; do
     unzip uurgeg_${i}_2011-2020.zip # Macbook
 done
